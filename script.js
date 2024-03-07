@@ -112,4 +112,130 @@ console.log (23 - 10 - 3);
 let n = '1' + 1;
 n = n - 1
 console.log(n); //10
+
+// 5 falsy values: 0, '', undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(`Jonas`));
+console.log(Boolean({}));
+console.log(Boolean(``));
+
+const money = 100;
+if (money)
+{
+    console.log(`Don't spend it all ;)`);
+}
+else
+{
+    console.log(`You should get a job!`);
+}
+
+let height;
+if (height)
+{
+    console.log(`YAY! Height is defined`);
+}else
+{
+    console.log(`Height is UNDEFINED`);
+}
+
+const age = '18'; // 3 = means there's no type coercion, so it's strict. 2 = means JS will use type coercion. It's recommended to only use the 3 = because the latter has lots of weird rules.
+if (age === 18) console.log(`You just became an adult :D (strict)`);
+
+if (age == 18) console.log(`You just became an adult :D (loose)`);
+
+const favorite = Number(prompt(`What's your favorite number?`));
+
+console.log(favorite);
+console.log(typeof favorite); //it's a string type
+
+if (favorite === 226)
+{
+    console.log(`Cool! 226 is an amazing number!`)
+}
+else if (favorite === 7) 
+{
+    console.log(`7 is also a cool number`)
+}
+else
+{
+    console.log(`The number is not 226 or 7`)
+}
+
+if (favorite !== 226) console.log(`Why not 226?`)
+
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision)
+// {
+//     console.log(`Sarah is able to drive!`)
+// }else
+// {
+//  console.log(`Someone else should drive...`)   
+// }
+
+const isTired = false;
+console.log(hasDriversLicense || hasGoodVision || isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired)
+{
+    console.log(`Sarah is able to drive!`)
+}else
+{
+ console.log(`Someone else should drive...`)   
+}
+
+
+const day = `monday`;
+
+switch(day)
+{
+    case `monday`: //strict comparison
+        console.log(`Plan course structure`);
+        console.log(`Go to coding meetup`);
+        break;
+    case `tuesday`:
+        console.log(`Prepare theory videos`);
+        break;
+    case `wednesday`:
+    case `thursday`:
+        console.log(`Write code examples`);
+        break;
+    case `friday`:
+        console.log(`Record videos`);
+        break;
+    case `saturday`:
+    case `sunday`:
+        console.log(`Enjoy the weekend`);
+        break;
+    default:
+        console.log(`Not a valid day`);
+}
+
+if (day === `monday`)
+{
+    console.log(`Plan course structure`);
+    console.log(`Go to coding meetup`);
+} else if (day === `tuesday`)
+{
+    console.log(`Prepare theory videos`);
+} else if (day === `wednesday` || day === `thursday`)
+{
+    console.log(`Write code examples`);
+} else if (day === `friday`)
+{
+    console.log(`Record videos`);
+} else if (day === `saturday` || day === `sunday`)
+{
+    console.log(`Enjoy your weekend!`);
+} else
+{
+    console.log(`Not a valid day!`);
+}
 */

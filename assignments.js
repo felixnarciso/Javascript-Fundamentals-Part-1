@@ -1,4 +1,4 @@
-
+/*
 const country = "Argentina";
 const continent = "South America";
 let population = 46000000;
@@ -48,3 +48,51 @@ console.log('19' - '13' + '17'); // -> 617 ('617')
 console.log('19' - '13' + 17); // -> 617 (23)
 console.log('123' < 57); // -> NaN (false)
 console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143 (1143)
+
+numNeighbors = Number(prompt('How many neighbor countries does your country have?'));
+
+if (numNeighbors === 1)
+{
+	console.log(`Only 1 border!`)
+}
+else if (numNeighbors > 1)
+{
+	console.log(`More than 1 border!`)
+}
+else
+{
+	console.log(`No borders`)
+}
+
+
+if (language === `english` && population < 50000000 && !isIsland)
+{
+	console.log(`You should live in ${country} ;D`)
+} else
+{
+	console.log(`${country} does not meet your criteria :c`)
+}
+
+
+switch(language)
+{
+	case `chinese`:
+	case `mandarin`:
+		console.log(`MOST number of native speakers!`);
+		break;
+	case `spanish`:
+		console.log(`2nd place in number of native speakers`);
+		break;
+	case `english`:
+		console.log(`3rd place`);
+		break;
+	case `hindi`:
+		console.log(`Number 4`);
+		break;
+	case `arabic`:
+		console.log(`5th most spoken language`);
+		break;
+	default:
+		console.log(`Great language too :D`);
+}
+*/
