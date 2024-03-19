@@ -238,7 +238,7 @@ if (day === `monday`)
 {
     console.log(`Not a valid day!`);
 }
-*/
+
 //The conditional operator
 const age = 23;
 //age >= 18 ? console.log(`I like to drink wine`) : console.log(`I like to drink water`);
@@ -257,3 +257,4 @@ if (age >= 18)
 console.log(drink2);
 
 console.log(`I like to drink ${age >= 18 ? `wine` : `water`}`)
+*/
